@@ -1,9 +1,10 @@
+import Container from 'components/Container';
 import React from 'react';
-import { Button, Container, Content, Description, Title } from './styles';
+import { Button, Content, Description, Title } from './styles';
 
 const HomePage: React.FC = () => {
     return (
-        <Container>
+        <Container image="images/banner1.jpg">
             <Content>
                 <Title>
                     Seja bem-vindo a <strong>maior academia</strong> do vale dos
