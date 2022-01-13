@@ -1,15 +1,11 @@
-import Head from 'next/head';
+import HomePage from 'components/HomePage';
+import Layout from 'components/Layout';
 
 const Home: React.FC = () => {
     return (
-        <>
-            <Head>
-                <title>Homepage</title>
-            </Head>
-            <main>
-                <h1>Homepage</h1>
-            </main>
-        </>
+        <Layout>
+            <HomePage />
+        </Layout>
     );
 };
 
