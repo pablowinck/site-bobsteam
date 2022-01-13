@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import { pricing } from '..';
 import {
@@ -31,7 +32,9 @@ const Card: React.FC<CardProps> = ({ item }) => {
                     </div>
                 ))}
             </Content>
-            <Button> CONTRATAR </Button>
+            <Link href="/contact" passHref>
+                <Button> CONTRATAR </Button>
+            </Link>
         </Container>
     );
 };
