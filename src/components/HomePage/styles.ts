@@ -8,6 +8,10 @@ export const Content = styled.div`
     width: 40rem;
 
     margin-left: 20vw;
+
+    @media (max-width: 650px) {
+        margin-left: 10vw;
+    }
 `;
 export const Title = styled.div`
     font-size: 3.75rem;
