@@ -17,11 +17,11 @@ type CardProps = {
 
 const Card: React.FC<CardProps> = ({ item }) => {
     return (
-        <Container>
-            <Title>{item.title}</Title>
+        <Container isMain={item.main}>
+            <Title isMain={item.main}>{item.title}</Title>
             <Price>
                 {item.price}
-                <Month>/month</Month>
+                <Month isMain={item.main}>/month</Month>
             </Price>
 
             <Content>
@@ -33,7 +33,7 @@ const Card: React.FC<CardProps> = ({ item }) => {
                 ))}
             </Content>
             <Link href="/contact" passHref>
-                <Button> CONTRATAR </Button>
+                <Button isMain={item.main}> CONTRATAR </Button>
             </Link>
         </Container>
     );
