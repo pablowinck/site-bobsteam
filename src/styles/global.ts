@@ -10,4 +10,18 @@ export default createGlobalStyle`
     html, body, #root {
         height: 100%;
     }
+
+    @media (max-width: 1000px) {
+        html {
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 650px) {
+        html {
+            font-size: 12px;
+        }
+    }
+
+   
 `;

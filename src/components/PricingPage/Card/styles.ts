@@ -2,8 +2,8 @@ import { PatchCheckFill } from '@styled-icons/bootstrap/PatchCheckFill';
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    width: 400px;
-    height: 500px;
+    width: 25rem;
+    height: 31.25rem;
 
     background-color: ${(props) => props.theme.colors.neutral[200]};
 
